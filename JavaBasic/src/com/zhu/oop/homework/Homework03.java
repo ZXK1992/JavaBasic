@@ -14,6 +14,10 @@ public class Homework03 {
     }
 }
 
+/**
+ *  编写类Book，定义方法updatePrice，实现更改某本数的价格，具体：
+ *  如果价格>150,则更改为150 ，如果价格>100更改为100，否则不变
+ */
 class Book {
     double price;
 

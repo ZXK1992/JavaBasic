@@ -13,6 +13,9 @@ public class Homework01 {
     }
 }
 
+/**
+ * 编写类A01，定义方法max，实现求某个double数组的最大值，并返回
+ */
 class A01{
     //求double数组最大值
      public double max(double[] arr){

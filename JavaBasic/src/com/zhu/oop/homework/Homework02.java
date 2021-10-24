@@ -14,6 +14,9 @@ public class Homework02 {
     }
 }
 
+/**
+ * 编写A02。定义方法find ，实现查找某字符串数组中的元素，并返回索引，找不到返回-1
+ */
 class A02{
     //实现查找某字符串数组中的元素，并返回索引，找不到返回-1
      public int find(String[] arr,String str){
