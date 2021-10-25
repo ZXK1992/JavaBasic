@@ -21,11 +21,10 @@ public class Homework04 {
  */
 class A03 {
     public int[] copyArr(int[] oldArr) {
-//        int[] newArr = new int[oldArr.length];
-//        for (int i = 0; i < oldArr.length; i++) {
-//            newArr[i]=oldArr[i];
-//        }
-//        return newArr;
-        return oldArr;
+        int[] newArr = new int[oldArr.length];
+        for (int i = 0; i < oldArr.length; i++) {
+            newArr[i] = oldArr[i];
+        }
+        return newArr;
     }
 }

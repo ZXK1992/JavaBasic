@@ -1,4 +1,4 @@
-package com.zhu.oop.encap;
+package com.zhu.oop2.encap;
 
 /**
  * @author: ZHUXIAOKANG

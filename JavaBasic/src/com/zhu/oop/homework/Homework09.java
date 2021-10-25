@@ -9,7 +9,7 @@ public class Homework09 {
     public static void main(String[] args) {
         Music music = new Music("菊花台", 300);
         music.play();
-        System.out.println(music.getInfo(music));;
+        System.out.println(music.getInfo(music));
     }
 }
 

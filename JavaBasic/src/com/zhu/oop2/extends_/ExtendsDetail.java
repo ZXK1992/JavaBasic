@@ -1,4 +1,4 @@
-package com.zhu.oop.extends_;
+package com.zhu.oop2.extends_;
 
 /**
  * @author: ZHUXIAOKANG

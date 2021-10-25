@@ -7,8 +7,7 @@ package com.zhu.oop.homework;
  */
 public class Homework05 {
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        circle.setR(3);
+        Circle circle = new Circle(3);
         //周长
         circle.showPerimeter();
         //面积
@@ -21,22 +20,17 @@ public class Homework05 {
  * 提供显示圆面积的方法
  */
 class Circle{
-    private double r;
+     double radius;
 
-    public double getR() {
-        return r;
-    }
-
-    public void setR(double r) {
-        this.r = r;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     /**
      * 显示周长
      */
     public void showPerimeter(){
-        double r = this.getR();
-        double perimeter = Math.PI*2*r;
+        double perimeter = Math.PI*2*radius;
         System.out.println("圆周长="+perimeter);
     }
 
@@ -44,8 +38,7 @@ class Circle{
      * 显示面积
      */
     public void showArea(){
-        double r = this.getR();
-        double area = Math.PI*r*r;
+        double area = Math.PI*radius*radius;
         System.out.println("圆面积="+area);
     }
 }
