@@ -13,6 +13,9 @@ public class RecusionExercise01 {
     }
 }
 
+/**
+ * 斐波拉切的递归解法
+ */
 class A{
     public int fibonacci(int n){
         if (n>=1 && n<=2){

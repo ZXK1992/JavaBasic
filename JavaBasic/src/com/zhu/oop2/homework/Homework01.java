@@ -5,9 +5,14 @@ package com.zhu.oop2.homework;
  * @date: 2021/10/26 0:41
  * @description:
  */
-public class Homework01 {
+public class Homework01 extends Homework02 {
+
     public static void main(String[] args) {
-        Person [] persons = {new Person("xm",2,"javagcs"),new Person("xw",3,"java"),new Person("xk",1,"java")};
+        Homework02 homework02 = new Homework02();
+        Person p1 = new Person("xm", 2, "javagcs");
+        Person p2 = new Person("xw",3,"java");
+        Person p3 = new Person("xk",1,"java");
+        Person[] persons = {p1,p2,p3};
         Person person = new Person();
         Person[] people = person.bubbleSort(persons);
         for (int i = 0; i < people.length; i++) {
@@ -38,7 +43,7 @@ class Person {
         Person p ;
         for (int i = 0; i < persons.length - 1; i++) {
             for (int j = 0; j < persons.length - 1 - i; j++) {
-                if (persons[j].age > persons[j + 1].age) {
+                if (persons[j].age < persons[j + 1].age) {
                     p = persons[j];
                     persons[j] = persons[j + 1];
                     persons[j + 1] = p;
