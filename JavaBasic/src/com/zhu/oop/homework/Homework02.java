@@ -8,7 +8,7 @@ package com.zhu.oop.homework;
 public class Homework02 {
     public static void main(String[] args) {
         A02 a02 = new A02();
-        String[] arr = {"aaa", "ccc", "zkx"};
+        String[] arr = {"Color.java", "ccc", "zkx"};
         String str = "zxk";
         Integer index = a02.find(arr, str);
       if (index!=null){

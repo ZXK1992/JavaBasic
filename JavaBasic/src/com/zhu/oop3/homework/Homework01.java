@@ -6,6 +6,9 @@ package com.zhu.oop3.homework;
  * @description:
  */
 public class Homework01 {
+    /*
+    写出代码执行结果
+     */
     public static void main(String[] args) {
         Car c=new Car();
         Car c1=new Car(100);

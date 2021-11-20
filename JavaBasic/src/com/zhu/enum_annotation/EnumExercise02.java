@@ -1,4 +1,4 @@
-package com.zhu.enum_;
+package com.zhu.enum_annotation;
 
 
 /**

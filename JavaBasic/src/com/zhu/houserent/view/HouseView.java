@@ -55,7 +55,6 @@ public class HouseView {
             }
             System.out.println();
         } while (loop);
-
     }
 
     /**

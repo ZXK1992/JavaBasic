@@ -8,7 +8,7 @@ package com.zhu.controlstructure;
 public class If03 {
     public static void main(String[] args) {
         if (false){
-            System.out.println("aaa");
+            System.out.println("Color.java");
         }
     }
 }
