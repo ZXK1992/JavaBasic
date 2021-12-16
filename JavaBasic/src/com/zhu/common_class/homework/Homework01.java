@@ -11,27 +11,35 @@ public class Homework01 {
     public static void main(String[] args) {
         //1.将字符串中指定部分进行反转。比如将"abcdef"反转为"aedcbf"
         //2.编写方法public static String reverse(String str,int start,int end)搞定
-        System.out.println(reverse("abcdef",1,4));;
+        String str = "abcdef";
+        System.out.println("===交换前===");
+        System.out.println(str);
+        try {
+             str = reverse(str, 0, 4);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+        System.out.println("===交换后===");
+        System.out.println(str);
     }
 
     public static String reverse(String str,int start,int end){
+        //对输入的参数做一个验证
+        //编程技巧
+        //(1)写出正确的情况
+        //(2)然后取反
+        if (!(str!=null && start>=0&&end >start&&end<str.length()-1)){
+            throw new RuntimeException("参数不正确");
+        }
         char[] chars = str.toCharArray();
-        String str1="";
-        for (int i = 0; i < chars.length; i++) {
-            if (i>=start && i<=end){
-                str1+=chars[i];
-            }
-        }
-        char[] chars1 = str1.toCharArray();
-        char[] chars2 = new char[chars1.length];
-        for (int i = chars1.length-1; i >=0; i--) {
-            chars2[chars1.length-i-1]=chars1[i];
-        }
-        String str2="";
-        for (int i = 0; i < chars2.length; i++) {
-            str2+=chars2[i];
-        }
-       String reverse = str.charAt(0)+str2+str.charAt(str.length()-1);
-        return reverse ;
+        char temp = 0;
+           for (int j=start,k=end;j<k;j++,k--){
+               temp=chars[j];
+               chars[j]=chars[k];
+               chars[k]=temp;
+           }
+//        String newStr = String.copyValueOf(chars);
+           return new String(chars);
     }
 }

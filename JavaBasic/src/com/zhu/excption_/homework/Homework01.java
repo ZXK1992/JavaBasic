@@ -9,21 +9,18 @@ import java.util.Scanner;
  */
 public class Homework01 {
     public static void main(String[] args) {
-        if (args.length!=2){
+        if (args.length != 2) {
             throw new ArrayIndexOutOfBoundsException("缺少命令行参数");
         }
         String s1 = args[0];
-        String s2= args[1];
+        String s2 = args[1];
         try {
             int n1 = Integer.parseInt(s1);
             int n2 = Integer.parseInt(s2);
-         cal(n1,n2);
+            cal(n1, n2);
         } catch (NumberFormatException e) {
             System.out.println("数据格式不正确");
         }
-
-
-
 
     }
 
@@ -38,8 +35,8 @@ public class Homework01 {
     public static void cal(int n1, int n2) {
 
         try {
-            double res =  n1 / n2;
-            System.out.println("计算结果="+res);
+            double res = n1 / n2;
+            System.out.println("计算结果=" + res);
         } catch (ArithmeticException e) {
             System.out.println("除数不能为0");
         }

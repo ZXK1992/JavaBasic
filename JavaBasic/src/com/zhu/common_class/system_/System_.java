@@ -10,7 +10,7 @@ public class System_ {
         //exit 退出当前重写程序
         System.out.println("ok");
         //1.exit(0)
-        //2. 0 biao表示一个状态，正常的状态
+        //2. 0 b表示一个状态，正常的状态
         System.exit(0);
          System.out.println("ok1");
 

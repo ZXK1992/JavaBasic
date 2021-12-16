@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.HashMap</OriginalElement>
+  <nodes>
+    <node x="8.0" y="174.0">java.util.LinkedHashMap</node>
+    <node x="298.0" y="174.0">java.util.Properties</node>
+    <node x="152.0" y="87.0">java.util.TreeMap</node>
+    <node x="134.0" y="0.0">java.util.Map</node>
+    <node x="0.0" y="87.0">java.util.HashMap</node>
+    <node x="303.0" y="87.0">java.util.Hashtable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.HashMap" target="java.util.Map">
+      <point x="0.0" y="-18.5" />
+      <point x="65.5" y="57.0" />
+      <point x="145.375" y="57.0" />
+      <point x="-34.125" y="18.5" />
+    </edge>
+    <edge source="java.util.Hashtable" target="java.util.Map">
+      <point x="0.0" y="-18.5" />
+      <point x="378.5" y="57.0" />
+      <point x="213.625" y="57.0" />
+      <point x="34.125" y="18.5" />
+    </edge>
+    <edge source="java.util.Properties" target="java.util.Hashtable">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.TreeMap" target="java.util.Map">
+      <point x="0.0" y="-18.5" />
+      <point x="217.5" y="67.0" />
+      <point x="190.875" y="67.0" />
+      <point x="11.375" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedHashMap" target="java.util.HashMap">
+      <point x="-47.75" y="-18.5" />
+      <point x="55.75" y="149.0" />
+      <point x="65.5" y="149.0" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedHashMap" target="java.util.Map">
+      <point x="47.75" y="-18.5" />
+      <point x="151.25" y="149.0" />
+      <point x="141.5" y="149.0" />
+      <point x="141.5" y="67.0" />
+      <point x="168.125" y="67.0" />
+      <point x="-11.375" y="18.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6242171189979123" x="229.5" y="105.5" />
+  <SelectedNodes>
+    <node>java.util.Properties</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

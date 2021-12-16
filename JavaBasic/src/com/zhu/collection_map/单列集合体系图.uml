@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.ArrayList</OriginalElement>
+  <nodes>
+    <node x="0.0" y="271.0">java.util.HashSet</node>
+    <node x="462.5" y="184.0">java.util.List</node>
+    <node x="483.0" y="271.0">java.util.Vector</node>
+    <node x="261.75" y="87.0">java.util.Collection</node>
+    <node x="95.5" y="184.0">java.util.Set</node>
+    <node x="302.0" y="271.0">java.util.LinkedList</node>
+    <node x="151.00000000000003" y="271.0">java.util.TreeSet</node>
+    <node x="271.75" y="0.0">java.lang.Iterable</node>
+    <node x="624.0" y="271.0">java.util.ArrayList</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.HashSet" target="java.util.Set">
+      <point x="32.75" y="-18.5" />
+      <point x="98.25" y="246.0" />
+      <point x="118.25" y="246.0" />
+      <point x="-22.75" y="18.5" />
+    </edge>
+    <edge source="java.util.ArrayList" target="java.util.Collection">
+      <point x="37.75" y="-18.5" />
+      <point x="737.25" y="144.0" />
+      <point x="411.25" y="144.0" />
+      <point x="69.0" y="18.5" />
+    </edge>
+    <edge source="java.util.Vector" target="java.util.List">
+      <point x="-30.25" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.Set">
+      <point x="-32.75" y="-18.5" />
+      <point x="183.75000000000003" y="246.0" />
+      <point x="163.75" y="246.0" />
+      <point x="22.75" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.List">
+      <point x="40.25" y="-18.5" />
+      <point x="422.75" y="246.0" />
+      <point x="479.33333333333337" y="246.0" />
+      <point x="-33.666666666666686" y="18.5" />
+    </edge>
+    <edge source="java.util.Set" target="java.util.Collection">
+      <point x="0.0" y="-18.5" />
+      <point x="141.0" y="154.0" />
+      <point x="296.25" y="154.0" />
+      <point x="-46.0" y="18.5" />
+    </edge>
+    <edge source="java.util.HashSet" target="java.util.Collection">
+      <point x="-32.75" y="-18.5" />
+      <point x="32.75" y="246.0" />
+      <point x="48.875" y="246.0" />
+      <point x="48.875" y="144.0" />
+      <point x="273.25" y="144.0" />
+      <point x="-69.0" y="18.5" />
+    </edge>
+    <edge source="java.util.List" target="java.util.Collection">
+      <point x="0.0" y="-18.5" />
+      <point x="513.0" y="164.0" />
+      <point x="365.25" y="164.0" />
+      <point x="23.0" y="18.5" />
+    </edge>
+    <edge source="java.util.Vector" target="java.util.Collection">
+      <point x="30.25" y="-18.5" />
+      <point x="574.0" y="154.0" />
+      <point x="388.25" y="154.0" />
+      <point x="46.0" y="18.5" />
+    </edge>
+    <edge source="java.util.Collection" target="java.lang.Iterable">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.TreeSet" target="java.util.Collection">
+      <point x="32.75" y="-18.5" />
+      <point x="249.25000000000003" y="246.0" />
+      <point x="233.12500000000003" y="246.0" />
+      <point x="233.12500000000003" y="164.0" />
+      <point x="319.25" y="164.0" />
+      <point x="-23.0" y="18.5" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.Collection">
+      <point x="-40.25" y="-18.5" />
+      <point x="342.25" y="246.0" />
+      <point x="345.66071428571433" y="246.0" />
+      <point x="345.66071428571433" y="164.0" />
+      <point x="342.25" y="164.0" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.util.ArrayList" target="java.util.List">
+      <point x="-37.75000000000003" y="-18.5" />
+      <point x="661.75" y="246.0" />
+      <point x="546.6666666666666" y="246.0" />
+      <point x="33.66666666666663" y="18.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8125786163522013" x="387.5" y="154.0" />
+  <SelectedNodes>
+    <node>java.util.TreeSet</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
