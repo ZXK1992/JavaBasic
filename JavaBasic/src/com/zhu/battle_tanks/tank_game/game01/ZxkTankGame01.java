@@ -1,7 +1,6 @@
-package com.zhu.battle_tanks.tank_game;
+package com.zhu.battle_tanks.tank_game.game01;
 
 import javax.swing.*;
-import java.awt.*;
 
 /**
  * @author: ZHUXIAOKANG

@@ -1,6 +1,4 @@
-package com.zhu.battle_tanks.tank_game;
-
-import java.awt.*;
+package com.zhu.battle_tanks.tank_game.game01;
 
 /**
  * @author: ZHUXIAOKANG
@@ -8,9 +6,9 @@ import java.awt.*;
  * @description:
  */
 public class Hero extends Tank{
+
+
     public Hero(int x, int y) {
         super(x, y);
     }
-
-
 }

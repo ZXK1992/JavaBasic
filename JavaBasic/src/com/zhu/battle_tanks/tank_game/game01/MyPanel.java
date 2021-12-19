@@ -1,7 +1,9 @@
-package com.zhu.battle_tanks.tank_game;
+package com.zhu.battle_tanks.tank_game.game01;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 /**
  * @author: ZHUXIAOKANG
@@ -9,7 +11,7 @@ import java.awt.*;
  * @description: 坦克大战的绘图区域
  */
 //1.先定义一个 MyPanel, 继承 JPanel 类， 画图形，就在面板上画
-public class MyPanel extends JPanel {
+public class MyPanel extends JPanel implements KeyListener {
     //定义我的坦克
     Hero hero = null;
 
@@ -52,6 +54,21 @@ public class MyPanel extends JPanel {
             default:
                 System.out.println("暂时没有处理");
         }
+
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        System.out.println(e.getKeyCode());
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
 
     }
 }
