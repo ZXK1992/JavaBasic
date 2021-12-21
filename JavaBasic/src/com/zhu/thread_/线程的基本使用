@@ -1,4 +1,0 @@
-1.创建线程的方式
-    1.继承Thread类，重写run方法
-    2.实现Runnable接口，重写run方法
-    3.实现Callnable接口

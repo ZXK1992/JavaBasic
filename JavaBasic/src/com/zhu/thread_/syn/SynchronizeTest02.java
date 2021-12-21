@@ -1,4 +1,4 @@
-package com.zhu.thread_;
+package com.zhu.thread_.syn;
 
 /**
  * @author: ZHUXIAOKANG
@@ -18,8 +18,11 @@ public class SynchronizeTest02 {
 class C implements Runnable {
     //让多个线程共享 ticketNum
     public static int ticketNum = 100;
-
-    public synchronized void synMethod(){
+    //老韩说明
+//1. public synchronized void synMethod() {} 就是一个同步方法
+//2. 这时锁在 this 对象
+//3. 也可以在代码块上写 synchronize ,同步代码块, 互斥锁还是在 this 对象
+    public synchronized void synMethod(){  //同步方法, 在同一时刻， 只能有一个线程来执行 synMethod 方法
         while (true) {
             if (ticketNum <= 0) {
                 System.out.println("售票结束...");

@@ -52,7 +52,9 @@ public class Thread01 {
         */
     }
 }
-
+//1.当一个类继承了Thread类，该类就可以当做线程使用
+//2.我们会重写run方法，写上自己的业务代码
+//3.run Thread类 实现了Runnable接口的run方法
 class CatThread extends Thread{
     int times=0;
     @Override
@@ -64,12 +66,13 @@ class CatThread extends Thread{
             try {
                 //本线程休眠一秒
                 Thread.sleep(1000);
-                //当输出80次我是小猫咪，结束该线程
-                if (times==80){//当 times 到 80, 退出 while, 这时线程也就退出..
-                    break;
-                }
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            }
+            //当输出80次我是小猫咪，结束该线程
+            if (times==80){//当 times 到 80, 退出 while, 这时线程也就退出..
+                break;
             }
         }
     }

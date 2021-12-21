@@ -1,4 +1,4 @@
-package com.zhu.thread_;
+package com.zhu.thread_.syn;
 
 /**
  * @author: ZHUXIAOKANG
