@@ -31,6 +31,7 @@ class ThreadDemo1 extends Thread{
             Thread.sleep(20000);
         } catch (InterruptedException e) {
             //当该线程执行到一个interrupt方法时，就会catch一个异常，可以加入自己的业务代码
+            //InterruptedException是捕获一个中断异常
             System.out.println(Thread.currentThread().getName()+"被interrupt了");
         }
 

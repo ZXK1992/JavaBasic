@@ -9,7 +9,10 @@ public class ThreadExit_ {
     public static void main(String[] args) {
       //启动一个线程t，要求在main线程中去停止线程t,请编程实现
         EThread eThread = new EThread();
-       new Thread(eThread).start();
+        Thread thread = new Thread(eThread);
+        thread.start();
+        //如果希望main线程去控制thread线程的终止，必须修改flag
+        //让thread退出run方法，从而终止thread线程 -->通知方式
         for (int i = 1; i <=60; i++) {
             try {
                 Thread.sleep(100);//让main线程休眠100毫秒

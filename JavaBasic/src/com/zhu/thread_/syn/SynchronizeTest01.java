@@ -20,11 +20,13 @@ public class SynchronizeTest01 {
 class B implements Runnable {
     //让多个线程共享 ticketNum
     public static int ticketNum = 100;
+    public Object obj = new Object();
 
     @Override
     public void run() {
-      synchronized (this) {
+
           while (true) {
+              synchronized (/*this*/obj) {
               if (ticketNum <= 0) {
                   System.out.println("售票结束...");
                   break;
