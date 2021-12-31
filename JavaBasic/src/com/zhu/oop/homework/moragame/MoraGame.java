@@ -91,7 +91,7 @@ class Tom {     // 核心代码
     public int computerNum() {
         Random r = new Random();
         comGuessNum = r.nextInt(3);      // 方法 返回 0-2的随机数
-        // System.out.println(comGuessNum);
+        // System.md.out.println(comGuessNum);
         return comGuessNum;
     }
 

@@ -26,7 +26,7 @@ public class LinkListCRUD {
         //get(1) 是得到双向链表的第二个对象
         Object o = linkedList.get(1);
         System.out.println(o);//999
-        //因为 LinkedList 是 实现了 List 接口, 遍历方式
+        //因为 LinkedList 是 实现了 List 接口.md, 遍历方式
         System.out.println("===LinkeList 遍历迭代器====");
         Iterator iterator = linkedList.iterator();
         while (iterator.hasNext()) {
@@ -53,8 +53,8 @@ public class LinkListCRUD {
         }
         4. 将新的结点，加入到双向链表的最后
         void linkLast (E e){
-            final Node<E> l = last;
-            final Node<E> newNode = new Node<>(l, e, null);
+            final.md Node<E> l = last;
+            final.md Node<E> newNode = new Node<>(l, e, null);
             last = newNode;
             if (l == null)
             first = newNode;
@@ -72,7 +72,7 @@ public class LinkListCRUD {
         }
         2. 执行
         public E removeFirst () {
-            final Node<E> f = first;
+            final.md Node<E> f = first;
             if (f == null)
                 throw new NoSuchElementException();
             return unlinkFirst(f);
@@ -80,8 +80,8 @@ public class LinkListCRUD {
         3. 执行 unlinkFirst, 将 f 指向的双向链表的第一个结点拿掉
         private E unlinkFirst (Node < E > f) {
             // assert f == first && f != null;
-            final E element = f.item;
-            final Node<E> next = f.next;
+            final.md E element = f.item;
+            final.md Node<E> next = f.next;
             f.item = null;
             f.next = null; // help GC
             first = next;

@@ -7,7 +7,7 @@ package com.zhu.oop3.homework.homework05;
  */
 public class Homework05 {
     /*
-    内部类
+    内部类.md
     1.编写一个类A。在类中定义局部内部类B,B中有一个私有final常量，有一个方法
     show()打印常量name，进行测试
     2.进阶：A中也定义一个私有的变量name，在show方法中打印测试

@@ -24,7 +24,7 @@ public class HashMapSource1 {
         return putVal(hash(key), key, value, false, true);
     }
 3. 执行 putVal
-    final V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
+    final.md V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
         Node<K,V>[] tab; Node<K,V> p; int n, i;//辅助变量
         //如果底层的 table 数组为 null, 或者 length =0 , 就扩容到 16
         if ((tab = table) == null || (n = tab.length) == 0)
@@ -43,7 +43,7 @@ public class HashMapSource1 {
                 e = p;
             else if (p instanceof TreeNode)//如果当前的 table 的已有的 Node 是红黑树，就按照红黑树的方式处
             理
-                e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
+                e = ((TreeNode<K,V>)p).putTreeVal(this.md, tab, hash, key, value);
             else {
                 //如果找到的结点，后面是链表，就循环比较
                 for (int binCount = 0; ; ++binCount) {//死循环
@@ -77,7 +77,7 @@ public class HashMapSource1 {
     }
 5. 关于树化(转成红黑树)
     //如果 table 为 null ,或者大小还没有到 64，暂时不树化，而是进行扩容. //否则才会真正的树化 -> 剪枝
-    final void treeifyBin(Node<K,V>[] tab, int hash) {
+    final.md void treeifyBin(Node<K,V>[] tab, int hash) {
         int n, index; Node<K,V> e;
         if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
             resize();

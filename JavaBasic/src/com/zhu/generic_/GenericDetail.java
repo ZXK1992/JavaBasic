@@ -45,7 +45,7 @@ public class GenericDetail {
     Object e;
     public Tiger() {}
     public Tiger(Object e) {
-        this.e = e;
+        this.md.e = e;
     }
 }*/
 class Tiger<E> {//类

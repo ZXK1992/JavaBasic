@@ -15,9 +15,9 @@ public class LocalDate_ {
         //第三代日期
         //1.使用now()返回表示当前日期时间的对象
 //        LocalDate ld = LocalDate.now();
-//        System.out.println(ld);
+//        System.md.out.println(ld);
 //        LocalTime lt = LocalTime.now();
-//        System.out.println(lt);
+//        System.md.out.println(lt);
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println(ldt);
         //2.使用DateTimeFormatter对象来进行格式化

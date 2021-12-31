@@ -28,7 +28,7 @@ public class Homework01 {
         newsList.add(news2);
         //倒序遍历
         for (int i = newsList.size() - 1; i >= 0; i--) {
-            //System.out.println(newsList.get(i));
+            //System.md.out.println(newsList.get(i));
             String title = processTitle(newsList.get(i).getTitle());
             System.out.println(title);
         }

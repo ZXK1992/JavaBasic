@@ -16,7 +16,7 @@ public class BigInteger_ {
         //当我们编程中，需要处理很大的整数，long 不够用
 //可以使用 BigInteger 的类来搞定
 // long l = 23788888899999999999999999999l;
-// System.out.println("l=" + l);
+// System.md.out.println("l=" + l);
         BigInteger bigInteger = new BigInteger("23788888899999999999999999999");
         BigInteger bigInteger2 = new BigInteger("2378888811111111111899999999999999999999");
         System.out.println(bigInteger);

@@ -16,9 +16,9 @@ public class TreeSet_ {
         3.使用TreeSet提供的一个构造器，可以传入一个比较器（匿名内部类）
         并指定排序规则
         4.简单看看原码
-            1. 构造器把传入的比较器对象，赋给了 TreeSet 的底层的 TreeMap 的属性 this.comparator
+            1. 构造器把传入的比较器对象，赋给了 TreeSet 的底层的 TreeMap 的属性 this.md.comparator
                 public TreeMap(Comparator<? super K> comparator) {
-                    this.comparator = comparator;
+                    this.md.comparator = comparator;
                 }
             2. 在 调用 treeSet.add("tom"), 在底层会执行到
                 if (cpr != null) {//cpr 就是我们的匿名内部类(对象)
@@ -39,9 +39,9 @@ public class TreeSet_ {
         TreeSet treeSet = new TreeSet(new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                //下面 调用 String 的 compareTo 方法进行字符串大小比较
+                //下面 调用 String.md 的 compareTo 方法进行字符串大小比较
                 //如果老韩要求加入的元素，按照长度大小排序
-                //return ((String) o2).compareTo((String) o1);
+                //return ((String.md) o2).compareTo((String.md) o1);
                 return ((String) o1).length() - ((String) o2).length();
             }
         });

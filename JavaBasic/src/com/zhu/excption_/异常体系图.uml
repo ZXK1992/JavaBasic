@@ -10,8 +10,8 @@
     <node x="577.0" y="261.0">java.lang.RuntimeException</node>
     <node x="1104.0" y="348.0">java.lang.ArrayIndexOutOfBoundsException</node>
     <node x="843.0" y="348.0">java.lang.ClassCastException</node>
-    <node x="0.0" y="348.0">java.lang.NullPointerException</node>
     <node x="612.0" y="174.0">java.lang.Exception</node>
+    <node x="0.0" y="348.0">java.lang.NullPointerException</node>
     <node x="914.625" y="0.0">java.io.Serializable</node>
     <node x="281.0" y="348.0">java.lang.ArithmeticException</node>
     <node x="773.625" y="0.0">java.lang.Object</node>
@@ -19,51 +19,23 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="java.lang.OutOfMemoryError" target="java.lang.Error">
-      <point x="0.0" y="-18.5" />
-      <point x="928.5" y="236.0" />
-      <point x="1026.25" y="236.0" />
-      <point x="-27.75" y="18.5" />
-    </edge>
-    <edge source="java.lang.Error" target="java.lang.Throwable">
-      <point x="0.0" y="-18.5" />
-      <point x="1054.0" y="149.0" />
-      <point x="957.375" y="149.0" />
-      <point x="37.75" y="18.5" />
-    </edge>
-    <edge source="java.lang.RuntimeException" target="java.lang.Exception">
-      <point x="0.0" y="-18.5" />
-      <point x="0.0" y="18.5" />
-    </edge>
-    <edge source="java.lang.Exception" target="java.lang.Throwable">
-      <point x="0.0" y="-18.5" />
-      <point x="687.5" y="149.0" />
-      <point x="881.875" y="149.0" />
-      <point x="-37.75" y="18.5" />
-    </edge>
-    <edge source="java.lang.ClassCastException" target="java.lang.RuntimeException">
-      <point x="0.0" y="-18.5" />
-      <point x="963.5" y="328.0" />
-      <point x="731.7" y="328.0" />
-      <point x="44.200000000000045" y="18.5" />
-    </edge>
     <edge source="java.lang.Throwable" target="java.io.Serializable">
       <point x="37.75" y="-18.5" />
       <point x="957.375" y="62.0" />
       <point x="1005.125" y="62.0" />
       <point x="0.0" y="18.5" />
     </edge>
-    <edge source="java.lang.ArrayIndexOutOfBoundsException" target="java.lang.RuntimeException">
-      <point x="0.0" y="-18.5" />
-      <point x="1284.5" y="318.0" />
-      <point x="775.9" y="318.0" />
-      <point x="88.39999999999998" y="18.5" />
-    </edge>
     <edge source="java.lang.ArithmeticException" target="java.lang.RuntimeException">
       <point x="0.0" y="-18.5" />
       <point x="406.5" y="328.0" />
       <point x="643.3" y="328.0" />
       <point x="-44.200000000000045" y="18.5" />
+    </edge>
+    <edge source="java.lang.ArrayIndexOutOfBoundsException" target="java.lang.RuntimeException">
+      <point x="0.0" y="-18.5" />
+      <point x="1284.5" y="318.0" />
+      <point x="775.9" y="318.0" />
+      <point x="88.39999999999998" y="18.5" />
     </edge>
     <edge source="java.lang.StackOverflowError" target="java.lang.Error">
       <point x="0.0" y="-18.5" />
@@ -77,9 +49,33 @@
       <point x="599.1" y="318.0" />
       <point x="-88.39999999999998" y="18.5" />
     </edge>
-    <edge source="java.lang.NumberFormatException" target="java.lang.RuntimeException">
+    <edge source="java.lang.OutOfMemoryError" target="java.lang.Error">
+      <point x="0.0" y="-18.5" />
+      <point x="928.5" y="236.0" />
+      <point x="1026.25" y="236.0" />
+      <point x="-27.75" y="18.5" />
+    </edge>
+    <edge source="java.lang.RuntimeException" target="java.lang.Exception">
       <point x="0.0" y="-18.5" />
       <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="java.lang.Error" target="java.lang.Throwable">
+      <point x="0.0" y="-18.5" />
+      <point x="1054.0" y="149.0" />
+      <point x="957.375" y="149.0" />
+      <point x="37.75" y="18.5" />
+    </edge>
+    <edge source="java.lang.Exception" target="java.lang.Throwable">
+      <point x="0.0" y="-18.5" />
+      <point x="687.5" y="149.0" />
+      <point x="881.875" y="149.0" />
+      <point x="-37.75" y="18.5" />
+    </edge>
+    <edge source="java.lang.ClassCastException" target="java.lang.RuntimeException">
+      <point x="0.0" y="-18.5" />
+      <point x="963.5" y="328.0" />
+      <point x="731.7" y="328.0" />
+      <point x="44.200000000000045" y="18.5" />
     </edge>
     <edge source="java.lang.Throwable" target="java.lang.Object">
       <point x="-37.75" y="-18.5" />
@@ -87,8 +83,12 @@
       <point x="834.125" y="62.0" />
       <point x="0.0" y="18.5" />
     </edge>
+    <edge source="java.lang.NumberFormatException" target="java.lang.RuntimeException">
+      <point x="0.0" y="-18.5" />
+      <point x="0.0" y="18.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.853799698037242" x="800.9157088122606" y="161.73044096728307" />
+  <settings layout="Hierarchic Group" zoom="0.6471380471380471" x="732.5" y="192.5" />
   <SelectedNodes>
     <node>java.lang.RuntimeException</node>
   </SelectedNodes>

@@ -26,7 +26,7 @@ class B implements Runnable {
     public void run() {
 
           while (true) {
-              synchronized (/*this*/obj) {
+              synchronized (/*this.md*/obj) {
               if (ticketNum <= 0) {
                   System.out.println("售票结束...");
                   break;

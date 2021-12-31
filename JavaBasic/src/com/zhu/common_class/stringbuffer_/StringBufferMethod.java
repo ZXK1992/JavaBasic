@@ -8,7 +8,7 @@ package com.zhu.common_class.stringbuffer_;
 public class StringBufferMethod {
     public static void main(String[] args) {
         StringBuffer s = new StringBuffer("hello");
-        //System.out.println(s);
+        //System.md.out.println(s);
 //增
         s.append(',');// "hello,"
         s.append("张三丰");//"hello,张三丰"

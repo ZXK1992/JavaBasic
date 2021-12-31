@@ -30,7 +30,7 @@ public class HouseService {
         //判断是否还可以继续添加（暂时不考虑扩容）
         //houseNum记录当前有多少个房屋信息
         if (houseNum == houses.length) {
-            //System.out.println("数组已满，不能再添加了..");
+            //System.md.out.println("数组已满，不能再添加了..");
             //进行扩容
             houses = Arrays.copyOf(this.houses, houses.length << 1);
         }

@@ -16,8 +16,8 @@ public class HashTableExercise {
     public static void main(String[] args) {
         Hashtable table = new Hashtable();
         table.put("john",100);
-        //table.put(null,100);//异常
-        //table.put("john",null);//异常
+        //table.put(null,100);//异常.md
+        //table.put("john",null);//异常.md
         table.put("lucy",100);
         table.put("lic",100);
         table.put("lic",88);

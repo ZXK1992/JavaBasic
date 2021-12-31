@@ -80,9 +80,9 @@ public class Shot implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            //System.out.println("子弹x="+getX()+"子弹y="+getY());
+            System.out.println("子弹x="+getX()+"子弹y="+getY());
             if (!(x >= 0 && x < 1000 && y >= 0 && y <= 500)) {
-               // System.out.println("发射子弹线程退出");
+               // System.md.out.println("发射子弹线程退出");
                 isLive=false;
                 break;
             }

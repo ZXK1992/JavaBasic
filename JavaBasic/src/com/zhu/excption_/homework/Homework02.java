@@ -12,7 +12,7 @@ public class Homework02 {
         }else {
             System.out.println("BB");
         }
-        Object obj = args[2];//String->Object ,向上转型
+        Object obj = args[2];//String.md->Object ,向上转型
         Integer i = (Integer) obj;//错误，这里一定发生ClassCastException
 
     }

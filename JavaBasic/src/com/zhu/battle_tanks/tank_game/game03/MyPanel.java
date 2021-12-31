@@ -11,6 +11,7 @@ import java.util.Vector;
  * 坦克大战的绘图区域
  */
 //为了监听 键盘事件，实现KeyListener
+//为了让Panel不停的重绘子弹，需要把它做成线程，实现Runnable接口，当做线程，按下j键，只调用一次paint方法
 public class MyPanel extends JPanel implements KeyListener,Runnable {
     //定义我的坦克
     Hero hero = null;
@@ -46,16 +47,18 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
         //由于要画很多种坦克，所以封装成一个方法
         //画出自己坦克-封装方法
         drawTank(hero.getX(), hero.getY(), g, 1, hero.getDirection());
+        //画hero射击的子弹
+        if (hero.getShot()!=null&&hero.getShot().isLive()==true){//首先没有空，而且还存活
+            System.out.println("子弹被绘制..");
+            g.draw3DRect(hero.getShot().getX(),hero.getShot().getY(),1,1,false);
+        }
        //画出敌人的坦克，遍历Vector
         for (int i = 0; i < enemyTanks.size(); i++) {
             //取出坦克
             EnemyTank enemyTank = enemyTanks.get(i);
             drawTank(enemyTank.getX(),enemyTank.getY(),g,0,enemyTank.getDirection());
         }
-        //画子弹
-        if (hero.getShot()!=null&&hero.getShot().isLive()==true){
-            g.drawRect(hero.getShot().getX(),hero.getShot().getY(),1,1);
-        }
+
     }
 
     /**
@@ -134,9 +137,8 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
         }
         //按下J键让子弹移动
         if (e.getKeyCode()==KeyEvent.VK_J){
-            hero.shot();
-
-            new Thread(hero.getShot()).start();
+           // System.md.out.println("用户按下J键");
+            hero.shotEnemy();
         }
         //让面板重绘
         this.repaint();
@@ -148,7 +150,7 @@ public class MyPanel extends JPanel implements KeyListener,Runnable {
     }
 
     @Override
-    public void run() {
+    public void run() {//每隔100毫秒，重绘区域，刷新绘图区域，子弹就移动
         while (true){
             try {
                 Thread.sleep(100);

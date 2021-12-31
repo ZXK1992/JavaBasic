@@ -16,7 +16,7 @@ public class Drawcircle extends JFrame{
         new Drawcircle();
         System.out.println("退出程序~");
     }
-    public Drawcircle() {//构造器
+    public Drawcircle() {//构造器.md
         //初始化面板
         panel=new MyPanel();
         //把面板放入到窗口(画框)
@@ -28,7 +28,7 @@ public class Drawcircle extends JFrame{
         this.setVisible(true);//可以显示
     }
 }
-//1.先定义一个 MyPanel, 继承 JPanel 类， 画图形，就在面板上画
+//1.先定义一个 MyPanel, 继承.md JPanel 类， 画图形，就在面板上画
 class MyPanel extends JPanel{
     //说明:
     //1. MyPanel 对象就是一个画板

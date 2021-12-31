@@ -11,7 +11,7 @@ import java.util.Properties;
  */@SuppressWarnings({"all"})
 public class ReflectionTest01 {
     public static void main(String[] args) throws Exception {
-        String filePath = "C:\\Users\\ZHUXIAOKANG\\IdeaProjects\\JavaBasic\\JavaBasic\\src\\com\\zhu\\reflection_\\re.properties";
+        String filePath = "C:\\Users\\ZHUXIAOKANG\\IdeaProjects\\JavaBasic\\JavaBasic\\src\\com\\zhu\\reflection_\\re.properties.md";
         BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
         Properties properties = new Properties();
         properties.load(bufferedReader);

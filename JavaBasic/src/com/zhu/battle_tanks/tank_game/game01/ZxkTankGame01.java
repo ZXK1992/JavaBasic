@@ -14,7 +14,7 @@ public class ZxkTankGame01 extends JFrame{
     public static void main(String[] args) {
         ZxkTankGame01 zxkTankGame01 = new ZxkTankGame01();
     }
-    public ZxkTankGame01() {//构造器
+    public ZxkTankGame01() {//构造器.md
         //初始化面板
         mp=new MyPanel();
         //把面板放入到窗口(就是游戏的绘图区域)

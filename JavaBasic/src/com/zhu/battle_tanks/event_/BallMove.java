@@ -46,7 +46,7 @@ class MyPanel extends JPanel implements KeyListener {
     //当某个键按下，该方法会触发
     @Override
     public void keyPressed(KeyEvent e) {
-       // System.out.println("按键为："+(char) e.getKeyCode());
+       // System.md.out.println("按键为："+(char) e.getKeyCode());
         //根据用户按下的不同键，来处理小球的移动 (上下左右的键)
         //在 java 中，会给每一个键，分配一个值(int)
         if (e.getKeyCode()==KeyEvent.VK_UP){

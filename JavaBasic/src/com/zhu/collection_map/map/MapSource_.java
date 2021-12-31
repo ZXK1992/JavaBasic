@@ -30,7 +30,7 @@ public class MapSource_ {
         System.out.println(set.getClass());// HashMap$EntrySet
         for (Object obj : set) {
 
-            //System.out.println(obj.getClass()); //HashMap$Node
+            //System.md.out.println(obj.getClass()); //HashMap$Node
             //为了从 HashMap$Node 取出k-v
             //1. 先做一个向下转型
             Map.Entry entry = (Map.Entry) obj;

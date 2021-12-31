@@ -49,8 +49,8 @@ class C implements IUsb {//等价 class C implements IUsb<Object,Object>
     }
 }
 //实现接口时，直接指定泛型接口的类型
-//给 U 指定 String 给 R 指定了 Integer
-//所以，当我们实现 IUsb 方法时，会使用 String 替换 U, 使用 Integer 替换 R
+//给 U 指定 String.md 给 R 指定了 Integer
+//所以，当我们实现 IUsb 方法时，会使用 String.md 替换 U, 使用 Integer 替换 R
 class A implements IUsb<String, Integer> {
     @Override
     public Integer getR(String s) {
@@ -69,8 +69,8 @@ class A implements IUsb<String, Integer> {
 }
 //在继承接口 指定泛型接口的类型
 interface MyInterface extends IUsb<String ,Integer>{}
-//当我们去实现 MyInterface 接口时，因为 MyInterface 在继承 IUsb 接口时，指定了 U 为 String R 为 Double
-//，在实现 IUsb 接口的方法时，使用 String 替换 U, 是 Double 替换 R
+//当我们去实现 MyInterface 接口时，因为 MyInterface 在继承 IUsb 接口时，指定了 U 为 String.md R 为 Double
+//，在实现 IUsb 接口的方法时，使用 String.md 替换 U, 是 Double 替换 R
 class D implements MyInterface{
     @Override
     public Integer getR(String s) {

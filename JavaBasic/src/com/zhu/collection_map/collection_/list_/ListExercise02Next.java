@@ -34,7 +34,7 @@ public class ListExercise02Next {
         }
     }
 
-    //静态方法
+    //静态方法.md
 //价格要求是从小到大
     public static void sort(List list) {
         int listSize = list.size();

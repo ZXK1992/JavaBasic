@@ -28,8 +28,8 @@ public class StringBufferExercise {
 手机 123,564.59 //比如 价格 3,456,789.88
 要求：价格的小数点前面每三位用逗号隔开, 在输出。
 思路分析
-1. 定义一个 Scanner 对象，接收用户输入的 价格(String)
-2. 希望使用到 StringBuffer 的 insert ，需要将 String 转成 StringBuffer
+1. 定义一个 Scanner 对象，接收用户输入的 价格(String.md)
+2. 希望使用到 StringBuffer.md 的 insert ，需要将 String.md 转成 StringBuffer.md
 3. 然后使用相关方法进行字符串的处理
  */
 class ExerciseTest{

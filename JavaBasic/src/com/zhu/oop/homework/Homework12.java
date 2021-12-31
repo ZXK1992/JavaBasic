@@ -25,9 +25,9 @@ class Employee {
 
     //构造器复用
     public Employee(String name, char sex, int age, String position, double salary) {
-//        this.name = name;
-//        this.sex = sex;
-//        this.age = age;
+//        this.md.name = name;
+//        this.md.sex = sex;
+//        this.md.age = age;
         this(name, sex, age);
         this.position = position;
         this.salary = salary;

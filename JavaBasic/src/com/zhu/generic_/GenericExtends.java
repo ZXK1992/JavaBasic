@@ -12,7 +12,7 @@ public class GenericExtends {
     public static void main(String[] args) {
         Object o = new String("xx");
         //泛型没有继承性
-        //List<Object> list = new ArrayList<String>();
+        //List<Object> list = new ArrayList<String.md>();
         //举例说明下面三个方法的使用
         List<Object> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();

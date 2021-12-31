@@ -69,7 +69,7 @@ class B extends Thread {
             }
             /*if ("Q".equals(next)) {
                 a.setFlag(false);//以通知的方式结束a线程
-                System.out.println("b线程退出");
+                System.md.out.println("b线程退出");
                 break;
             }*/
             if (next == 'Q') {

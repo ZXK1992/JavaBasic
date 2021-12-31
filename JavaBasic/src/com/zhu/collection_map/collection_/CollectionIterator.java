@@ -17,7 +17,7 @@ public class CollectionIterator {
         col.add(new Book("三国演义", "罗贯中", 10.1));
         col.add(new Book("小李飞刀", "古龙", 5.1));
         col.add(new Book("红楼梦", "曹雪芹", 34.6));
-        //System.out.println("col="+col);
+        //System.md.out.println("col="+col);
         //希望遍历col集合
         //1.先得到col对应的迭代器
         Iterator iterator = col.iterator();

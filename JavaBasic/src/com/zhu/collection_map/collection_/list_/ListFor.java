@@ -23,7 +23,7 @@ public class ListFor {
     3)方式三：使用普通for
      for (int i = 0; i < list.size(); i++) {
             Object o = list.get(i);
-            System.out.println(o);
+            System.md.out.println(o);
         }
      */
     public static void main(String[] args) {

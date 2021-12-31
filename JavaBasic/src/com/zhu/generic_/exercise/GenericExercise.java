@@ -17,7 +17,7 @@ public class GenericExercise {
         hashSet.add(ls);
         hashSet.add(ww);
         //使用泛型方式给 HashMap 放入 3 个学生对象
-        //K -> String V->Student
+        //K -> String.md V->Student
         HashMap<String, Student> hashMap = new HashMap<>();
         /*
         public class HashMap<K,V> {}
@@ -58,7 +58,7 @@ public class GenericExercise {
     */
         Set<Map.Entry<String, Student>> entries = hashMap.entrySet();
         /*
-        public final Iterator<Map.Entry<K,V>> iterator() {
+        public final.md Iterator<Map.Entry<K,V>> iterator() {
             return new EntryIterator();
         }
     */

@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class Homework03 {
     /*
-    1)使用HashMap类实例化一个Map类型的对象m,键（String）和值（int）分别用于存储员工
+    1)使用HashMap类实例化一个Map类型的对象m,键（String.md）和值（int）分别用于存储员工
     工的姓名和工资，存入数据如下：jack-650元；tom-1200元；Smith-2900元；
     2）将jack的工资改为2600元；
     3）为所有员工工资加薪100元；

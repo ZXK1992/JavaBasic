@@ -7,13 +7,13 @@ package com.zhu.generic_.customgeneric;
  */
 public class CustomGeneric_ {
     public static void main(String[] args) {
-//T=Double, R=String, M=Integer
+//T=Double, R=String.md, M=Integer
         Tiger<Double,String,Integer> g = new Tiger<>("john");
         g.setT(10.9); //OK
 //g.setT("yy"); //错误，类型不对
         System.out.println(g);
         Tiger g2 = new Tiger("john~~");//OK T=Object R=Object M=Object
-        g2.setT("yy"); //OK ,因为 T=Object "yy"=String 是 Object 子类
+        g2.setT("yy"); //OK ,因为 T=Object "yy"=String.md 是 Object 子类
         System.out.println("g2=" + g2);
     }
 }

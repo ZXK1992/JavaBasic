@@ -28,16 +28,16 @@ public class ArraysMethod02 {
         //1. 从 arr 数组中，拷贝 arr.length 个元素到 newArr 数组中
         //2. 如果拷贝的长度 > arr.length 就在新数组的后面 增加 null
         //3. 如果拷贝长度 < 0 就抛出异常 NegativeArraySizeException
-        //Arrays.copyOf(arr, -1);
-        //4. 该方法的底层使用的是 System.arraycopy()
+        //Arrays.md.copyOf(arr, -1);
+        //4. 该方法的底层使用的是 System.md.arraycopy()
         Integer[] arr02 = {1, 2, 90, 123, 567};
         //使用Arrays.copyOf扩容数组两倍
         arr02 = Arrays.copyOf(arr02, arr02.length << 1);
         System.out.println("扩容后：" + Arrays.toString(arr02));
         //5) asList 将一组值，转换成 list
         //1. asList 方法，会将 (2,3,4,5,6,1)数据转成一个 List 集合
-        //2. 返回的 asList 编译类型 List(接口)
-        //3. asList 运行类型 java.util.Arrays#ArrayList, 是 Arrays 类的
+        //2. 返回的 asList 编译类型 List(接口.md)
+        //3. asList 运行类型 java.util.Arrays.md#ArrayList, 是 Arrays.md 类的
         // 静态内部类 private static class ArrayList<E> extends AbstractList<E>
         // implements RandomAccess, java.io.Serializable
         int[] arr03 = {2, 3, 4, 5, 6, 1};

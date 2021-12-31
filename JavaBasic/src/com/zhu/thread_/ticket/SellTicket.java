@@ -36,7 +36,7 @@ class SellTicketT extends Thread {
 
     @Override
     public void run() {
-        //synchronized (this) {
+        //synchronized (this.md) {
         while (true) {//做一个循环，什么时候卖完就退出
             if (ticketCount <= 0) {//先判断
                 System.out.println("售票结束");
@@ -62,7 +62,7 @@ class SellTicketTT implements Runnable {
 
     @Override
     public void run() {
-        //synchronized (this) {
+        //synchronized (this.md) {
             while (true) {
                 if (ticketCount <= 0) {
                     System.out.println("售票结束");

@@ -1,17 +1,17 @@
 package com.zhu.operator;
 
 /**
- * 位运算
+ * 位运算.md
  */
 public class BitOperator {
     public static void main(String[] args) {
-//        System.out.println(2 & 3);
-//        System.out.println(2 | 3);
-//        System.out.println(~ -2);
-//        System.out.println(~ 2);
-//        System.out.println(2 ^ 3);
+//        System.md.out.println(2 & 3);
+//        System.md.out.println(2 | 3);
+//        System.md.out.println(~ -2);
+//        System.md.out.println(~ 2);
+//        System.md.out.println(2 ^ 3);
 //        int i  = 66;
-//        System.out.println(++ i + i);
+//        System.md.out.println(++ i + i);
         //~-5 = ?
         //原码 10000000 00000000 00000000 00000101
         //反码 11111111 11111111 11111111 11111010

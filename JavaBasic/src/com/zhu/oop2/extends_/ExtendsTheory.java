@@ -14,8 +14,8 @@ public class ExtendsTheory {
         //(3) 如果子类没有这个属性，就看父类有没有这个属性(如果父类有该属性，并且可以访问，就返回信息..)
         //(4) 如果父类没有就按照(3)的规则，继续找上级父类，直到 Object...
         System.out.println(son.name);//返回就是大头儿子
-        //System.out.println(son.age);//返回的就是 39
-        //System.out.println(son.getAge());//返回的就是 39
+        //System.md.out.println(son.age);//返回的就是 39
+        //System.md.out.println(son.getAge());//返回的就是 39
         System.out.println(son.hobby);//返回的就是旅游
     }
 }

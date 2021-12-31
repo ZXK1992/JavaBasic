@@ -12,7 +12,7 @@ import java.io.IOException;
  */
 public class FileInputStream_ {
     /**
-     * 请使用 FileInputStream 读取 hello.txt 文件，并将文件内容显示到控制台
+     * 请使用 FileInputStream 读取 hello.txt 文件.md，并将文件内容显示到控制台
      *使用read()
      * @param args
      */

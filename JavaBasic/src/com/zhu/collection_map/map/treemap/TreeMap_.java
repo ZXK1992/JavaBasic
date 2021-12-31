@@ -12,15 +12,15 @@ public class TreeMap_ {
     public static void main(String[] args) {
         //使用默认的构造器，创建 TreeMap, 是无序的(也没有排序)
 /*
-老韩要求：按照传入的 k(String) 的大小进行排序
+老韩要求：按照传入的 k(String.md) 的大小进行排序
 */
 // TreeMap treeMap = new TreeMap();
         TreeMap treeMap = new TreeMap(new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                //按照传入的 k(String) 的大小进行排序
-                //按照 K(String) 的长度大小排序
-                //return ((String) o2).compareTo((String) o1);
+                //按照传入的 k(String.md) 的大小进行排序
+                //按照 K(String.md) 的长度大小排序
+                //return ((String.md) o2).compareTo((String.md) o1);
                 return ((String) o2).length() - ((String) o1).length();
             }
         });
@@ -32,9 +32,9 @@ public class TreeMap_ {
         System.out.println("treemap=" + treeMap);
 /*
 老韩解读源码：
-    1. 构造器. 把传入的实现了 Comparator 接口的匿名内部类(对象)，传给给 TreeMap 的 comparator
+    1. 构造器.md. 把传入的实现了 Comparator 接口的匿名内部类(对象)，传给给 TreeMap 的 comparator
         public TreeMap(Comparator<? super K> comparator) {
-            this.comparator = comparator;
+            this.md.comparator = comparator;
         }
     2. 调用 put 方法
         2.1 第一次添加, 把 k-v 封装到 Entry 对象，放入 root

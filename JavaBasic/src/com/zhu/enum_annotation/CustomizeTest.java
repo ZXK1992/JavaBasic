@@ -19,7 +19,7 @@ class Season {
     private String name;
     private String desc;//描述
     //3. 在 Season 内部，直接创建固定的对象
-    //4. 优化，可以加入 final 修饰符
+    //4. 优化，可以加入 final.md 修饰符
     public final static Season SPRING = new Season("春天", "温暖");
     public final static Season SUMMER = new Season("夏天", "炎热");
     public final static Season AUTUMN = new Season("秋天", "凉爽");

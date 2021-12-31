@@ -16,7 +16,7 @@ public class CustomerMethodGeneric {
         car.fly(300, 100.1);//当调用方法时，传入参数，编译器，就会确定类型
 
         //测试
-//T->String, R-> ArrayList
+//T->String.md, R-> ArrayList
         Fish<String, ArrayList> fish = new Fish<>();
         fish.hello(new ArrayList(), 11.3f);
     }

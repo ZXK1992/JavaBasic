@@ -21,7 +21,7 @@ public class Homework {
     public static void main(String[] args) {
 
         Color color = Color.RED;
-        //System.out.println(color.name());
+        //System.md.out.println(color.name());
         switch (color) {
             case RED:
                 color.show();

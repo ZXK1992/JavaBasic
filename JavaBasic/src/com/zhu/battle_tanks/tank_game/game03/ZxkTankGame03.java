@@ -14,6 +14,8 @@ public class ZxkTankGame03 extends JFrame{
     }
     public ZxkTankGame03(){
         mp=new MyPanel();
+        //在创建mp的时候启动
+        //将mp放入到Thread中，并启动
         Thread thread = new Thread(mp);
         thread.start();
         this.add(mp);

@@ -24,7 +24,7 @@ public class HashSetSource {
         }
         2.调用add
         public boolean add(E e) {//e="java" ,PRESENT是共享
-            // private static final Object PRESENT = new Object();
+            // private static final.md Object PRESENT = new Object();
             return map.put(e, PRESENT)==null;
         }
         3.执行put，该方法会执行hash(key)得到key对应的hash值h = key.hashCode()) ^ (h >>> 16)
@@ -32,7 +32,7 @@ public class HashSetSource {
             return putVal(hash(key), key, value, false, true);
         }
         4.执行putVal
-          final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
+          final.md V putVal(int hash, K key, V value, boolean onlyIfAbsent,
                    boolean evict) {
             Node<K,V>[] tab; Node<K,V> p; int n, i;//定义了辅助变量
             //table是HashMap的一个数组属性，类型Node<K,V>[]
@@ -61,7 +61,7 @@ public class HashSetSource {
                  //在判断p是不是一颗红黑树，
                  //如果是一颗红黑树，就调用putTreeVal，来进行添加
                 else if (p instanceof TreeNode)
-                    e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
+                    e = ((TreeNode<K,V>)p).putTreeVal(this.md, tab, hash, key, value);
                 else {//如果table对应的索引位置，已经是一个链表，就使用for循环比较
                        //（1）依次和该链表的每一个元素比较后，都不相同，则加入到该链表的最后
                        //  注意在把元素添加到链表后，立即判断 该链表是否已经达到8个结点

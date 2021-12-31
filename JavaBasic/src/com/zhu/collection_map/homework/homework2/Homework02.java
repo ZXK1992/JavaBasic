@@ -44,7 +44,7 @@ public class Homework02 {
         System.out.println("元素个数="+arrayList.size());
         System.out.println(arrayList.isEmpty());
        /* arrayList.clear();
-        System.out.println(arrayList.isEmpty());*/
+        System.md.out.println(arrayList.isEmpty());*/
         Car car6 = new Car("丰田", 150000);
         Car car7 = new Car("五菱", 50000);
         ArrayList list = new ArrayList();
@@ -53,7 +53,7 @@ public class Homework02 {
         arrayList.addAll(list);
         System.out.println("添加list完后");
         System.out.println(arrayList.containsAll(list));
-//        System.out.println(arrayList.removeAll(list));
+//        System.md.out.println(arrayList.removeAll(list));
         //增强for
         System.out.println("增强for");
         for (Object o : arrayList) {

@@ -21,12 +21,12 @@ public class Vector_ {
         //1. new Vector() 底层
     /*
     public Vector() {
-        this(10);
+        this.md(10);
     }
     补充：如果是 Vector vector = new Vector(8);
     走的方法:
     public Vector(int initialCapacity) {
-        this(initialCapacity, 0);
+        this.md(initialCapacity, 0);
     }
     2. vector.add(i)
     2.1 //下面这个方法就添加数据到 vector 集合
@@ -55,7 +55,7 @@ public class Vector_ {
     newCapacity = minCapacity;
     if (newCapacity - MAX_ARRAY_SIZE > 0)
     newCapacity = hugeCapacity(minCapacity);
-    elementData = Arrays.copyOf(elementData, newCapacity);
+    elementData = Arrays.md.copyOf(elementData, newCapacity);
     }
     */
     }

@@ -28,7 +28,7 @@ public class Homework02_ {
      * (3) 邮箱中包含@和.   并且@在.的前面
      * <p>
      * 思路分析
-     * (1) 先编写方法 userRegister(String name, String pwd, String email) {}
+     * (1) 先编写方法 userRegister(String.md name, String.md pwd, String.md email) {}
      * (2) 针对 输入的内容进行校核，如果发现有问题，就抛出异常，给出提示
      * (3) 单独的写一个方法，判断 密码是否全部是数字字符 boolean
      */

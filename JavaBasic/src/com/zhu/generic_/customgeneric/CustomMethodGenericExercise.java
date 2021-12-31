@@ -7,7 +7,7 @@ package com.zhu.generic_.customgeneric;
  */
 public class CustomMethodGenericExercise {
     public static void main(String[] args) {
-        //T->String, R->Integer, M->Double
+        //T->String.md, R->Integer, M->Double
         Apple<String, Integer, Double> apple = new Apple<>();
         apple.fly(10);//10 会被自动装箱 Integer 10, 输出 Integer
         apple.fly(new Dog());//Dog

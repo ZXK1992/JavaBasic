@@ -21,11 +21,11 @@ public class Collections_ {
         list.add("tom");
         // reverse(List)：反转 List 中元素的顺序
         Collections.reverse(list);
-        //System.out.println("list=" + list);
+        //System.md.out.println("list=" + list);
         //shuffle(List)：对 List 集合元素进行随机排序
 //        for (int i = 0; i < 5; i++) {
 //            Collections.shuffle(list);
-//            System.out.println("list=" + list);
+//            System.md.out.println("list=" + list);
 //        }
 
         // sort(List)：根据元素的自然顺序对指定 List 集合元素按升序排序
@@ -36,11 +36,11 @@ public class Collections_ {
         Collections.sort(list, new Comparator<Object>() {
             @Override
             public int compare(Object o1, Object o2) {
-                //return ((String)o2).compareTo(((String)o1));
+                //return ((String.md)o2).compareTo(((String.md)o1));
                 return ((String) o1).length() - ((String) o2).length();
             }
         });
-        //System.out.println("Comparator排序后");
+        //System.md.out.println("Comparator排序后");
         System.out.println("字符串长度大小排序=" + list);
         System.out.println("list=" + list);
 

@@ -10,7 +10,7 @@ import java.awt.event.KeyListener;
  * @date: 2021/12/16 22:34
  * @description: 坦克大战的绘图区域
  */
-//1.先定义一个 MyPanel, 继承 JPanel 类， 画图形，就在面板上画
+//1.先定义一个 MyPanel, 继承.md JPanel 类， 画图形，就在面板上画
 public class MyPanel extends JPanel implements KeyListener {
     //定义我的坦克
     Hero hero = null;
@@ -25,7 +25,7 @@ public class MyPanel extends JPanel implements KeyListener {
         g.fillRect(0, 0, 1000, 750);//填充矩形，默认黑色
         //由于要画很多种坦克，所以封装成一个方法
         drawTank(hero.getX(), hero.getY(), g, 0, 0);
-        drawTank(hero.getX() + 60, hero.getY(), g, 1, 0);
+        //drawTank(hero.getX() + 60, hero.getY(), g, 1, 0);
     }
     /**
      * @param x 坦克的左上角 x 坐标
@@ -37,10 +37,10 @@ public class MyPanel extends JPanel implements KeyListener {
     public void drawTank(int x, int y, Graphics g, int type, int direction) {
         switch (type) {
             case 0:
-                g.setColor(Color.CYAN);
+                g.setColor(Color.YELLOW);
                 break;
             case 1:
-                g.setColor(Color.YELLOW);
+                g.setColor(Color.CYAN);
                 break;
         }
         switch (direction) {

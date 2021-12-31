@@ -34,9 +34,9 @@ public class Date01 {
         String format = sdf.format(d1); // format:将日期转换成指定格式的字符串
         System.out.println("当前日期=" + format);
         //老韩解读
-        //1. 可以把一个格式化的 String 转成对应的 Date
+        //1. 可以把一个格式化的 String.md 转成对应的 Date
         //2. 得到 Date 仍然在输出时，还是按照国外的形式，如果希望指定格式输出，需要转换
-        //3. 在把 String -> Date ， 使用的 sdf 格式需要和你给的 String 的格式一样，否则会抛出转换异常
+        //3. 在把 String.md -> Date ， 使用的 sdf 格式需要和你给的 String.md 的格式一样，否则会抛出转换异常
         String s = "1996 年 01 月 01 日 10:20:30 星期一";
         Date parse = sdf.parse(s);
         System.out.println("parse=" + sdf.format(parse));
