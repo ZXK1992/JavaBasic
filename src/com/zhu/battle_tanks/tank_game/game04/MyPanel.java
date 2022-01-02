@@ -55,9 +55,9 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         }
 
         //初始化图片对象
-        image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/bomb_1.gif"));
-        image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/bomb_2.gif"));
-        image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/bomb_3.gif"));
+        image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_1.gif"));
+        image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_2.gif"));
+        image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_3.gif"));
     }
 
     @Override
@@ -238,9 +238,12 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         }
         //按下J键让子弹移动
         if (e.getKeyCode() == KeyEvent.VK_J) {
-            hero.shot();
+            //判断hero的子弹是否销毁（第一次射击前为空,或者子弹消亡了）
+            if (hero.getShot() == null || !hero.getShot().isLive()) {
+                hero.shot();
 
-            new Thread(hero.getShot()).start();
+            }
+
 
         }
         //让面板重绘
