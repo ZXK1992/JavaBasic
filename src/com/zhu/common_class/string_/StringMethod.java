@@ -45,10 +45,8 @@ public class StringMethod {
         int age = 10;
         double score = 56.857;
         char gender = '男';
-
 //将所有的信息都拼接在一个字符串.
-String info =
-        "我的姓名是" + name1 + "年龄是" + age + ",成绩是" + score + "性别是" + gender + "。希望大家喜欢我！ ";
+String info = "我的姓名是" + name1 + "年龄是" + age + ",成绩是" + score + "性别是" + gender + "。希望大家喜欢我！ ";
         System.out.println(info);
         //用占位符表示上面的属性
         String formatStr = "我的姓名是%s 年龄是%d，成绩是%.2f 性别是%c.希望大家喜欢我！";

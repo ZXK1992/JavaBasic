@@ -9,7 +9,17 @@ public class Tank {
     private int x;
     private int y;
     private int direction;
-    private int speed;
+    private int speed=1;
+    //存活状态
+    private boolean isLive = true;//是否存活
+
+    public boolean isLive() {
+        return isLive;
+    }
+
+    public void setLive(boolean live) {
+        isLive = live;
+    }
 
     public int getSpeed() {
         return speed;

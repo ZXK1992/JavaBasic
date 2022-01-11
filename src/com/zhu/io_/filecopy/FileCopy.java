@@ -1,4 +1,4 @@
-package com.zhu.io_;
+package com.zhu.io_.filecopy;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

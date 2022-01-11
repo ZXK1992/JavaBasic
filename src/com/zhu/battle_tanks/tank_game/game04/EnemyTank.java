@@ -29,7 +29,7 @@ public class EnemyTank extends Tank implements Runnable {
         while (true) {
             //这里我们判断如果shots size()=0,创建一颗子弹，放入到
             //shots集合，并启动
-            if (isLive()&&shots.size()<3){//敌人子弹只有一颗的情况，想多颗改数字
+            if (isLive()&&shots.size()<1){//敌人子弹只有一颗的情况，想多颗改数字
                 //定义临时变量
                 Shot s=null;
                 //判断坦克方向，创建对应的子弹

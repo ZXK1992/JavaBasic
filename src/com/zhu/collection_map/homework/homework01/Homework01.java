@@ -21,7 +21,7 @@ public class Homework01 {
     5)在控制台打印遍历出经过处理的新闻标题
      */
     public static void main(String[] args) {
-        News news1 = new News("新冠确诊病例超千万，数百万印度教信徒赴恒河\"圣浴\"引民众担忧");
+        News news1 = new News("新冠确诊病例超千万，数百万印度教信徒赴恒河 \"圣浴\" 引民众担忧");
         News news2 = new News("男子突然想起个月前钓的鱼还在往兜里，捞起来一看赶紧放生");
         ArrayList<News> newsList = new ArrayList<>();
         newsList.add(news1);

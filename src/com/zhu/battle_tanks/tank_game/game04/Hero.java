@@ -15,9 +15,9 @@ public class Hero extends Tank {
     //发射子弹
     public void shotEnemyTank(){
         //控制同一时间在面板是只有5颗子弹
-        if (shots.size()==3){
+        /*if (shots.size()==3){
             return;
-        }
+        }*/
         switch (getDirection()){
             case 0://向上
                shot= new Shot(getX()+20,getY(),0);
@@ -33,7 +33,7 @@ public class Hero extends Tank {
                 break;
         }
         //新创建的shot子弹加入shots集合
-        shots.add(shot);
+        //shots.add(shot);
         //启动shot线程
         new Thread(shot).start();
 
