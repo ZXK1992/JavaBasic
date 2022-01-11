@@ -1,13 +1,13 @@
-#底层结构
+# 底层结构
     ArrayList：可变数组Object[] elementData
     Vector：   可变数组Object[] elementData
-#出来的版本
+# 出来的版本
     ArrayList ：jdk1.2
     Vector  ：jdk1.0
-#线程安全（同步）效率
+# 线程安全（同步）效率
     ArrayList ：不安全，效率高
     Vector  ：安全，效率低
-#扩容倍数
+# 扩容倍数
     ArrayList ：
         如果有参构造1.5倍
         如果是无参构造

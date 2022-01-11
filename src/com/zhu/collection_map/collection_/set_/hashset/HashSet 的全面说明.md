@@ -1,4 +1,4 @@
-#1. HashSet 的全面说明
+# 1. HashSet 的全面说明
     1)HashSet 实现了Set接口
     2）HashSet 实际上是HashMap
          public HashSet() {

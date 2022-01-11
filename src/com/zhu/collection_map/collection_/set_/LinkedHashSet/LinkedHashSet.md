@@ -1,4 +1,4 @@
-#1.LinkedHashSet的全面说明
+# 1.LinkedHashSet的全面说明
     1）LinkedHashSet是HashSet的子类
     2）LinkedHashSet底层是一个LinkedHashMap，底层维护了一个数组+
        双向链表

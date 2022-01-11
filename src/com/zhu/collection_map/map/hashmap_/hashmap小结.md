@@ -1,4 +1,4 @@
-#1.HashMap小结
+# 1.HashMap小结
     1）Map接口的常用实现类：HashMap，hashtable 和 Properties
     2)HashMap是Map接口使用频率最高的实现类
     3）HashMap是以key-value对的方式来存储数据（HashMap$Node类型）
@@ -8,7 +8,7 @@
        数组+链表+红黑树）
     7）HashMap没有实现同步，因此是线程不安全的，方法没有做同步互斥的操作，没有synchronized
 
-#2.HashMap底层机制及源码剖析
+# 2.HashMap底层机制及源码剖析
     1）(k,v)是一个Node实现了Map。Entry<K,V>,查看HashMap的原码可以看到
     2）jdk7的HashMap底层实现[数组+链表]，jdk8底层[数组+链表+红黑树]
     扩容机制[和HashSet相同]

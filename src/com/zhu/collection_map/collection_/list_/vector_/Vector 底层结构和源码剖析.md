@@ -1,4 +1,4 @@
-#1. Vector 的基本介绍
+# 1. Vector 的基本介绍
     1）Vector类的定义说明
         public class Vector<E>
         extends AbstractList<E>

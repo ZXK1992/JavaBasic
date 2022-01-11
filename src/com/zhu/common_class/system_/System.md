@@ -1,4 +1,4 @@
-#1.System 类常见方法
+# 1.System 类常见方法
     1)exit退出当前程序
     2）arraycopy：复制数组元素，比较适合底层调用，一般使用
        Arrays.copyOf完成复制数组

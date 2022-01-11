@@ -1,4 +1,4 @@
-#1. ArrayList 和 LinkedList 的比较
+# 1. ArrayList 和 LinkedList 的比较
     底层结构：
         ArrayList：可变数组
         LinkedList：双向链表

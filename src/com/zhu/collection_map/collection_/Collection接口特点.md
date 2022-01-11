@@ -1,10 +1,10 @@
-#1.Collection接口实现类的特点
+# 1.Collection接口实现类的特点
     1）collection实现子类可以存放多个元素，每个元素可以是Object
     2）有些Collection的实现类，可以存放重复的元素，有些不可以
     3）有些Collection的实现类，有些是有序的(List)，有些不是有序(Set)
     4)Collection接口没有直接的实现子类，是通过它的子接口Set和List来
       实现的
-#2. Collection 接口遍历元素方式
+# 2. Collection 接口遍历元素方式
     1.使用Iterator(迭代器)
         基本介绍
         1）Iterator对象称为迭代器，主要用于遍历Collection集合元素

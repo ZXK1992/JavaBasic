@@ -1,4 +1,4 @@
-#1.StringBuilder基本介绍
+# 1.StringBuilder基本介绍
     1）一个可变的字符序列，此类提供一个与StringBuffer兼容的API，
        但不保证同步（StringBuilder不是线程安全）。该类被设计用作
        StringBuffer的一个简易替换，用在字符串缓冲区被耽搁线程使用
@@ -6,7 +6,7 @@
        比StringBuffer要快。
     2）在StringBuilder上的主要操作是append和insert方法，可重载
        这些方法，以接受任意类型的数据。
-#2.StringBuilder常用方法
+# 2.StringBuilder常用方法
     1. StringBuilder和 StringBuffer均代表可变的字符序列，方法是一样的，所以
       使用和StringBuffer一样。
     2. StringBuilder是final类不能被继承
@@ -16,7 +16,7 @@
     4. StringBuilder 的方法，没有做互斥的处理,即没有 synchronized 关键字,
       因此在单线程的情况下使用
 
-#3.String、StringBuffer和StringBuilder的比较
+# 3.String、StringBuffer和StringBuilder的比较
     1）StringBuffer和StringBuilder非常类似，均代表可变字符序列，而且方法
        也一样
     2）String：不可变字符序列，效率低，但是复用率高
@@ -30,10 +30,10 @@
        环中会极大影响程序的性能 => 结论：如果我们对String做大量的修改不
        要使用String
 
-#4.String、StringBuffer和StringBuilder的执行效率
+# 4.String、StringBuffer和StringBuilder的执行效率
     StringBuilder > StringBuffer > String
 
-#5.String、StringBuffer 和 StringBuilder 的选择
+# 5.String、StringBuffer 和 StringBuilder 的选择
     使用的原则，结论：
         1.如果字符串存在大量的修改操作，一般使用StringBuffer或StringBuilder
         2.如果字符串存在大量的修改操作,并且在单线程情况，使用StringBuilder

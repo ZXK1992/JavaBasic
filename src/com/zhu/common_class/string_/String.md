@@ -1,4 +1,4 @@
-#1.String 类的理解和创建对象
+# 1.String 类的理解和创建对象
     1）String对象用于保存字符串，也就是一组字符序列
     2）字符串常量对象是用双引号括起的字符序列
     3）字符串的字符使用Unicode字符编码，一个字符(不区分字母还是汉字）
@@ -9,7 +9,7 @@
       //String s3 = new String(char[] a);
       //String s4 = new String(char[] a,int startIndex,int count)
       //String s5 = new String(byte[] b)
-#2.String 的创建对象的方式
+# 2.String 的创建对象的方式
     1）方式一：直接赋值String s ="zxk";
     2）方式二：调用构造器String s2 = new String("zxk");
     区别：
@@ -22,10 +22,10 @@
     (用equals(Object)方法确定),则返回池中的字符串。否则，对此String对象添
     加到池中，并返回此String对象的引用
     调用intern方法最终返回的是常量池的地址(对象）。
-#3.字符串的特性
+# 3.字符串的特性
     1)String是一个final类，代表不可变字符序列
     2)字符串是不可变的，一个字符串对象一旦被分配，其内容是不可变的
-#4.String常用方法（可参考StringMethod.Java）
+# 4.String常用方法（可参考StringMethod.Java）
     说明：String类是保存字符串常量的。每次更新都需要重新开辟空间，效率较低
     equals 区分大小写，判断内容是否相等
     equalsIgnoreCase 忽略大小写判断内容是否相等
