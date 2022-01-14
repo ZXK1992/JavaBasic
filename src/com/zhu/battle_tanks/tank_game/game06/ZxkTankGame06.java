@@ -1,5 +1,4 @@
-package com.zhu.battle_tanks.tank_game.game05;
-
+package com.zhu.battle_tanks.tank_game.game06;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
@@ -11,14 +10,15 @@ import java.util.Scanner;
  * @date: 2021/12/18 22:48
  * @description:
  */
-public class ZxkTankGame05 extends JFrame {
+public class ZxkTankGame06 extends JFrame {
     MyPanel mp = null;
-    Scanner sc =new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        new ZxkTankGame05();
+        new ZxkTankGame06();
     }
-    public ZxkTankGame05() {
+
+    public ZxkTankGame06() {
         System.out.println("请选择：新游戏(1)\t继续上局(2)");
         String key = sc.next();
         mp = new MyPanel(key);

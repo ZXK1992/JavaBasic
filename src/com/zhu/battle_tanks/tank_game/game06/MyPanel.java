@@ -1,10 +1,11 @@
-package com.zhu.battle_tanks.tank_game.game05;
+package com.zhu.battle_tanks.tank_game.game06;
 
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 import java.util.Vector;
 
 /**
@@ -33,16 +34,24 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
     Image image2 = null;
     Image image3 = null;
 
+    //启动游戏时传入
     public MyPanel(String key) {
-        //得到读取文件的Vector<Node> nodes
-        nodes = Recorder.getAllEnemyNumAndNodes();
+        //因为刚开始新游戏是没有recordFile文件，所以会抛异常
+        File file = new File(Recorder.getRecordFile());
+        if (file.exists()&&"2".equals(key)){//如果文件存在，才读取
+            //得到读取文件的Vector<Node> nodes
+            nodes = Recorder.getAllEnemyNumAndNodes();
+        }else {//文件不存在,开新游戏,将可以设置为1
+            //System.out.println("文件不存在,开新游戏" );
+            key="1";
+        }
         //将MyPanel对象的enemy
         Recorder.setEnemyTanks(enemyTanks);
         hero = new Hero(500, 200);//初始化自己坦克
         hero.setSpeed(2);
         //判断是否需要重开游戏
         switch (key){
-            case "1"://表示重开游戏
+            case "1"://表示开新游戏
                 //初始化敌人坦克
                 for (int i = 0; i < enemyTankSize; i++) {
                     //创建一个敌人的坦克
@@ -85,6 +94,7 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
                     enemyTanks.add(enemyTank);
                 }
                 break;
+
             default:
                 System.out.println("您的选择有误，请重新选择");
                 break;
@@ -93,6 +103,8 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_1.gif"));
         image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_2.gif"));
         image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/com/zhu/battle_tanks/tank_game/game04/img/bomb_3.gif"));
+        //这里，播放指定的音乐
+        new AePlayWave("src\\com\\zhu\\battle_tanks\\tank_game\\game06\\111.wav").start();
     }
 
     //编写方法，显示我方击毁敌方坦克的信息
@@ -248,6 +260,7 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
     //在判断我方子弹是否击中敌人坦克时，就需要把我们的子弹集合中
     //所以的子弹都取出来和敌人所有坦克，进行判断
     public void hitEnemyTank() {
+
         //发射单颗子弹的
         Shot shot = hero.getShot();
         if (shot != null && shot.isLive()) {
