@@ -1,4 +1,4 @@
-package com.zhu.network_program;
+package com.zhu.network_program.tcpprogram;
 
 import java.io.IOException;
 import java.io.OutputStream;
