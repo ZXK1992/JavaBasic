@@ -18,5 +18,11 @@ public class InetAddressAPI {
         System.out.println(byName);
         InetAddress host3 = InetAddress.getByName("www.baidu.com");
         System.out.println(host3);
+        //获取InetAddress对象的主机名getHostName
+        String hostName = host3.getHostName();
+        System.out.println("hostName="+hostName);
+        //获取InetAddress对象的地址getHostAddress
+        String hostAddress = host3.getHostAddress();
+        System.out.println("hostAddress="+hostAddress);
     }
 }
