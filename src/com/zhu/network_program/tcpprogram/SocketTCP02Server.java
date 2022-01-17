@@ -41,7 +41,8 @@ public class SocketTCP02Server {
         //服务端发送hello,client
         OutputStream outputStream = socket.getOutputStream();
         outputStream.write("hello,client".getBytes());
-        // 设置结束标记
+
+        // 设置写入结束标记,表示后面没有数据写入
         socket.shutdownOutput();
         //6.关闭流和 socket
         inputStream.close();

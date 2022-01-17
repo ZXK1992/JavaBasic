@@ -20,7 +20,7 @@ public class SocketTCP01Server {
         //2. 当没有客户端连接 9999 端口时，程序会 阻塞, 等待连接
         // 如果有客户端连接，则会返回 Socket 对象，程序继续
         Socket socket = serverSocket.accept();
-        //3. 通过 socket.getInputStream() 读取客户端写入到数据通道的数据, 显示
+ /*       //3. 通过 socket.getInputStream() 读取客户端写入到数据通道的数据, 显示
         InputStream inputStream = socket.getInputStream();
         //4. IO 读取
         byte[] buf = new byte[1024];
@@ -33,7 +33,6 @@ public class SocketTCP01Server {
         inputStream.close();
         socket.close();
         serverSocket.close();//关闭
-
-    }
+*/    }
 }
 

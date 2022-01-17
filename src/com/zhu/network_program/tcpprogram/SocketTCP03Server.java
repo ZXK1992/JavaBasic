@@ -42,8 +42,6 @@ public class SocketTCP03Server {
         bw.write("hello,client,字符流");
         bw.newLine();// 插入一个换行符，表示回复内容的结束
         bw.flush();//注意需要手动的 flush
-        // 设置结束标记
-        socket.shutdownOutput();
         //6.关闭流和 socket
         bw.close();
         br.close();

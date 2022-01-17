@@ -13,10 +13,10 @@ import java.net.Socket;
 public class SocketTCP01Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
-        OutputStream outputStream = socket.getOutputStream();
+     /*   OutputStream outputStream = socket.getOutputStream();
         outputStream.write("hello client".getBytes());
         outputStream.close();
-        socket.close();
+        socket.close();*/
 
     }
 }

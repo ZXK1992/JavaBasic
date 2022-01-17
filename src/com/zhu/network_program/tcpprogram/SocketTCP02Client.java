@@ -14,10 +14,12 @@ import java.net.Socket;
 public class SocketTCP02Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
+        //2.连接上后,生成socket,通过socket.getOutputStream()
         OutputStream outputStream = socket.getOutputStream();
         outputStream.write("hello server".getBytes());
-        // 设置结束标记
+        //设置写入结束标记,表示后面没有数据写入
         socket.shutdownOutput();
+        //获取和socket关联的输入流,读取数据(字节),并显示
         //并接收服务器端回发的"hello,client",再退出
         InputStream inputStream = socket.getInputStream();
         byte[] buf = new byte[1024];
