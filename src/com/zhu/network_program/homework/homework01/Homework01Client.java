@@ -20,7 +20,8 @@ public class Homework01Client {
      */
     public static void main(String[] args) throws IOException {
         //创建socket对象连接服务端
-        Socket socket = new Socket(InetAddress.getLocalHost().getHostName(), 6666);
+        //Socket socket = new Socket(InetAddress.getLocalHost().getHostName(), 6666);
+        Socket socket = new Socket(InetAddress.getByName("192.168.203.129"), 6666);
         OutputStream outputStream = socket.getOutputStream();
         //使用字符流发送
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(outputStream));

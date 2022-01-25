@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.EventListener;
 
 /**
  * @author: ZHUXIAOKANG
@@ -28,7 +29,7 @@ public class BallMove extends JFrame {
 }
 //面板, 可以画出小球
 //KeyListener 是监听器, 可以监听键盘事件
-class MyPanel extends JPanel implements KeyListener {
+class MyPanel extends JPanel implements KeyListener , EventListener{
     //为了让小球可以移动, 把他的左上角的坐标(x,y)设置变量
     int x=10;
      int y=10;

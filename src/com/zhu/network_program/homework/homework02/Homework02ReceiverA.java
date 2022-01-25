@@ -24,31 +24,34 @@ public class Homework02ReceiverA {
     public static void main(String[] args) throws IOException {
         //1.接收端在8888端口等待接收数据,构建DatagramSocket对象
         DatagramSocket socket = new DatagramSocket(8888);
-        //data数组用于存放接收的数据
+        //data数组用于存放接收的数据,在前面讲解UDP协议时,一个数据包最大64k
         byte[] data = new byte[1024];
+        //2.构建一个DatagramPacket对象,准备接收数据
         DatagramPacket packet = new DatagramPacket(data, data.length);
-        //System.out.println("接收端A等待接收数据");
+        System.out.println("接收端A等待接收数据");
         //接收数据
+        //3.调用接收方法,将通过网络传输的DatagramPacket对象
         socket.receive(packet);
         //拆包获取数据用data指向
+        int length = packet.getLength();
         data = packet.getData();
-        String s = new String(data).trim();
+       // String s = new String(data).trim();
+        String s = new String(data,0,length);
         System.out.println(s);
         //接收方回复
         //回复的数据字节数组
         String rightMes="四大名著是哪些";
-        String mes = "";
+        String answer = "";
         byte[]bytes=null;
+        //判断接收到的信息是什么
         if (rightMes.equals(s)){
-             mes="四大名著是<<红楼梦>>,<<西游记>>,<<三国演义>>,<<水浒传>>";
-            bytes=mes.getBytes();
-            //重新装包//构建DatagramPacket对象,接收方的主机地址,端口
-            packet=new DatagramPacket(bytes,bytes.length, InetAddress.getByName("192.168.0.107"), 8887);
+            answer="四大名著是<<红楼梦>>,<<西游记>>,<<三国演义>>,<<水浒传>>";
         }else{
-            mes="what?";
-            bytes=mes.getBytes();
-            packet=new DatagramPacket(bytes,bytes.length, InetAddress.getByName("192.168.0.107"), 8887);
+            answer="what?";
         }
+        bytes=answer.getBytes();
+        //重新装包//构建DatagramPacket对象,接收方的主机地址,端口
+        packet=new DatagramPacket(bytes,bytes.length, InetAddress.getByName("192.168.0.107"), 8887);
         //发送消息(回复B端)
         socket.send(packet);
         socket.close();
