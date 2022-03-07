@@ -36,5 +36,14 @@ https://www.zhihu.com/question/38496907[示意图]
         对象
         Class cls = 基本数据类型.class;
     6.基本数据类型对应的包装类,可以通过.TYPE得到Class类对象
-Class cls = 包装类.TYPE
+    Class cls = 包装类.TYPE
+## 5.哪些类型有Class对象
+    1.外部类，成员内部类，静态内部类，局部内部类，匿名内部类
+    2.interface ：接口
+    3.数组
+    4.enum： 枚举
+    5.annotation：注释
+    6.基本数据类型
+    7.void
+
 
