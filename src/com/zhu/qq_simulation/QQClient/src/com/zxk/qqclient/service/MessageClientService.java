@@ -1,7 +1,9 @@
 package com.zhu.qq_simulation.QQClient.src.com.zxk.qqclient.service;
 
-import com.zxk.qqcommon.Message;
-import com.zxk.qqcommon.MessageType;
+
+
+import com.zhu.qq_simulation.QQClient.src.com.zxk.qqcommon.Message;
+import com.zhu.qq_simulation.QQClient.src.com.zxk.qqcommon.MessageType;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

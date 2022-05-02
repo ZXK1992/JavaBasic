@@ -1,5 +1,7 @@
 package com.zhu.common_class;
 
+import java.util.Scanner;
+
 /**
  * @author: ZHUXIAOKANG
  * @date: 2021/10/11 23:22
@@ -15,3 +17,18 @@ public class Integer_ {
         System.out.println(i11 == i12); //T
     }
 }
+
+class A{
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B ();
+        C c = new C();
+        if (b instanceof A){
+
+            //Scanner
+        }
+    }
+}
+class B extends A{}
+class C extends A{}
+
